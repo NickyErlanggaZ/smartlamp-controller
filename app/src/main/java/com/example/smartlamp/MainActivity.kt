@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
                 cond2 = false
                 AndroidNetworking.get("http://47.254.248.173/iot/update1.php")
 //                    .addQueryParameter("id", "4")
-                    .addQueryParameter("status", "yes")
+                    .addQueryParameter("status", "on")
                     .build()
                     .getAsJSONArray(object: JSONArrayRequestListener{
                         override fun onResponse(response: JSONArray?) {
@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
                 cond2 = true
                 AndroidNetworking.get("http://47.254.248.173/iot/update1.php")
 //                    .addQueryParameter("id", "4")
-                    .addQueryParameter("status", "no")
+                    .addQueryParameter("status", "on")
                     .build()
                     .getAsJSONArray(object: JSONArrayRequestListener{
                         override fun onResponse(response: JSONArray?) {
